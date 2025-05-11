@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
-    '@nuxt/image'
-  ]
+    '@nuxt/image',
+  ],
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
 })
