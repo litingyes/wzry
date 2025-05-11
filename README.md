@@ -1,75 +1,20 @@
-# Nuxt Minimal Starter
+# 王者荣耀图鉴
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> [!WARNING]
+> WIP: 本项目刚起步，功能正在加急开发
 
-## Setup
+## 为何做
 
-Make sure to install dependencies:
+- 本人王者荣耀老油条，场次 14000+
+- 本人前端开发，学习的技术要落地实践
 
-```bash
-# npm
-npm install
+## 任务列表
 
-# pnpm
-pnpm install
+[] 英雄卡片
+[] 皮肤图鉴
+[] 个人图片转王者荣耀英雄卡
 
-# yarn
-yarn install
+## 技术栈
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Nuxt](https://nuxt.com/)
+- [Vue.js](https://cn.vuejs.org/)
