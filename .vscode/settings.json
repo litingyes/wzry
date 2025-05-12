@@ -1,6 +1,8 @@
 {
   "cSpell.words": [
+    "jiti",
     "Nuxt",
+    "ofetch",
     "vercel"
   ],
   "editor.formatOnSave": false,
@@ -28,6 +30,7 @@
     "markdown",
     "json",
     "css",
-    "scss"
+    "scss",
+    "yaml"
   ]
 }

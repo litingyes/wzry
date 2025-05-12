@@ -1,0 +1,42 @@
+name: Update Data
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+
+      - run: pnpm install
+
+      - run: |
+          pnpm jiti scripts/spider.ts
+          pnpm lint:fix
+
+      - run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_updated=true" >> $GITHUB_ENV
+          else
+            echo "has_updated=false" >> $GITHUB_ENV
+          fi
+      - if: env.has_updated == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "chore: update data"
+          git pull origin main -r
+          git push origin main
