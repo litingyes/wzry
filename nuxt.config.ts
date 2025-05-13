@@ -8,10 +8,14 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
+    '@unocss/nuxt',
   ],
   eslint: {
     config: {
       standalone: false,
     },
+  },
+  unocss: {
+    nuxtLayers: true,
   },
 })
