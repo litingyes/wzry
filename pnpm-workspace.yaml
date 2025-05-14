@@ -1,5 +1,7 @@
 onlyBuiltDependencies:
   - '@vercel/speed-insights'
+  - vue-demi
 publicHoistPattern:
   - jiti
   - ofetch
+  - '@unocss/core'

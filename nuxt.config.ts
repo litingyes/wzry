@@ -9,7 +9,15 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@unocss/nuxt',
+    '@vueuse/nuxt',
+    'motion-v/nuxt',
   ],
+  icon: {
+    componentName: 'NuxtIcon',
+    serverBundle: {
+      collections: ['mingcute'],
+    },
+  },
   eslint: {
     config: {
       standalone: false,

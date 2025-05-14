@@ -8,7 +8,9 @@ import '@unocss/reset/tailwind-compat.css'
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <main class="size-screen overflow-auto">
+      <NuxtPage />
+    </main>
     <Analytics />
     <SpeedInsights />
   </div>
