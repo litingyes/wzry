@@ -3,5 +3,7 @@ onlyBuiltDependencies:
   - vue-demi
 publicHoistPattern:
   - jiti
+  - lodash-es
   - ofetch
+  - '@types/lodash-es'
   - '@unocss/core'

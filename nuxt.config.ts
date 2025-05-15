@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     'motion-v/nuxt',
+    'nuxt-lodash',
   ],
   icon: {
     componentName: 'NuxtIcon',
@@ -25,5 +26,8 @@ export default defineNuxtConfig({
   },
   unocss: {
     nuxtLayers: true,
+  },
+  lodash: {
+    prefix: '_',
   },
 })
